@@ -1,0 +1,55 @@
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+	font-size: 10px;
+	--a-color: #007aff;
+	--h-color: #111;
+	--p-color: #333;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+wrapper {
+	width: 80%;
+	max-width: 64rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header,
+section,
+footer {
+	width: 100%;
+	margin-top: 8rem;
+}
+
+p {
+	font-size: 1.6rem;
+	color: var(--p-color);
+	line-height: 3rem;
+}
+
+a,
+a:visited {
+	font-weight: bold;
+	color: var(--a-color);
+	text-decoration: none;
+}
+
+swiper-container {
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+}
