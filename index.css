@@ -1,7 +1,6 @@
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
-	font-size: 10px;
 	--a-color: #007aff;
 	--h-color: #111;
 	--p-color: #333;
@@ -11,6 +10,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: none;
+}
+
+html {
+	font-size: 10px;
 }
 
 body {
@@ -23,16 +26,15 @@ body {
 
 wrapper {
 	width: 80%;
-	max-width: 100rem;
+	max-width: 80rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 header,
-section,
-footer {
-	width: 100%;
+section {
 	margin-top: 8rem;
+	width: 100%;
 }
 
 subsection {
@@ -44,16 +46,16 @@ subsection {
 }
 
 subsection div:nth-child(1) {
-	width: 20%;
+	width: 25%;
 }
 
 subsection div:nth-child(2) {
-	width: 60%;
+	width: 65%;
 }
 
 h1 {
-	font-size: 3.2rem;
-	line-height: 3.2rem;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
 	color: var(--h-color);
 }
 
@@ -72,6 +74,36 @@ a:visited {
 
 swiper-container {
 	width: 100%;
-	height: 300px;
+	height: 30rem;
 	border: 1px solid black;
+}
+
+@media only screen and (max-width: 425px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+@media only screen and (min-width: 425px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	html {
+		font-size: 10px;
+	}
 }
