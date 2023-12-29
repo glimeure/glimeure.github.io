@@ -3,49 +3,180 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Gregory Lim's Portfolio</title>
+		<link href="img/favicon-black-32.png" rel="shortcut icon" type="image/x-icon" media="(prefers-color-scheme: light)" />
+		<link href="img/favicon-white-32.png" rel="shortcut icon" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+		<link href="img/favicon-black-256.png" rel="apple-touch-icon" media="(prefers-color-scheme: light)" />
+		<link href="img/favicon-white-256.png" rel="apple-touch-icon" media="(prefers-color-scheme: dark)" />
+		<title>Portfolio • Gregory Lim</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-		<script src="index.js"></script>
+		<link rel="stylesheet" href="fonts.css" />
 		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="queries.css" />
 	</head>
 	<body>
+		<viewport-alert> The screen is currently too small! Please increase your viewport width to see this page. </viewport-alert>
 		<wrapper>
 			<header>
 				<p>
-					I'm Gregory Lim, a computer science undergraduate at 🏫 <a href="#" target="_blank">SUTD</a> in Singapore. I'm passionate about improving lives through beautiful and efficient design. <br /><br />
-					Got ideas? Let's get in touch!
+					My name is Gregory Lim and I am a software developer from Singapore.
+					<br />
+					I am currently studying Computer Science and Design as an undergraduate at 🏫 <a href="https://www.google.com/maps/place/Singapore+University+of+Technology+and+Design+(SUTD)/@1.3139946,103.6794444,11z/data=!4m10!1m2!2m1!1ssutd!3m6!1s0x31da3cd899f260cb:0x99becabc6d025518!8m2!3d1.341258!4d103.9637585!15sCgRzdXRkIgOIAQGSAQp1bml2ZXJzaXR54AEA!16s%2Fm%2F09gh_cr" target="_blank">SUTD</a>.
 				</p>
+				<socials>
+					<icon title="E-mail">
+						<a href="mailto:gregorylimeurhen@gmail.com" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-4 w-4">
+								<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+								<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+							</svg>
+						</a>
+					</icon>
+					<icon title="GitHub">
+						<a href="https://github.com/glimeure" target="_blank">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
+								<title>GitHub</title>
+								<path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+							</svg>
+						</a>
+					</icon>
+					<icon title="LinkedIn">
+						<a href="https://linkedin.com/in/glimeure" target="_blank">
+							<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
+								<title>LinkedIn</title>
+								<path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+							</svg>
+						</a>
+					</icon>
+				</socials>
 			</header>
 
 			<section>
-				<swiper-container pagination="true" pagination-clickable="true">
-					<swiper-slide>Slide 1</swiper-slide>
-					<swiper-slide>Slide 2</swiper-slide>
-					<swiper-slide>Slide 3</swiper-slide>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/EmmyAI-1.png" /></swiper-slide>
 				</swiper-container>
 				<subsection>
-					<div>
-						<h1>Project</h1>
-						<p>
-							<a href="#" target="_blank">Website</a>
-						</p>
-					</div>
-					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+					<left>
+						<h1>EmmyAI</h1>
+						<roles>Developer, 2023</roles>
+						<members></members>
+						<tech>
+							<badge>Python</badge>
+						</tech>
+						<links> 🔗 <a href="https://gregorylimeurhen.pyscriptapps.com/emmyai/latest/" target="_blank">Demo</a> </links>
+					</left>
+					<right>
+						<p> An AI character designed to entertain in life-like ways. Full features include speech-to-text built on OpenAI's Whisper model, responses generated by a fine-tuned version of OpenAI's Curie LLM, text-to-speech built on Microsoft Azure's Ashley speech synthesis model, and live animations generated by VTube Studio. </p>
+					</right>
 				</subsection>
 			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true" gallery>
+					<swiper-slide><img src="img/50Arches-1.gif" /></swiper-slide>
+					<swiper-slide><img src="img/50Arches-2.jpg" /></swiper-slide>
+					<swiper-slide><img src="img/50Arches-3.jpg" /></swiper-slide>
+					<swiper-slide><img src="img/50Arches-4.jpg" /></swiper-slide>
+					<swiper-slide><img src="img/50Arches-5.jpg" /></swiper-slide>
+					<swiper-slide><img src="img/50Arches-6.jpg" /></swiper-slide>
+					<swiper-slide><img src="img/50Arches-7.gif" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h1>50Arches</h1>
+						<roles>Software Head, 2023</roles>
+						<members>
+							<ul>
+								<li>Austin Isaac</li>
+								<li>Tan Hyu Seong</li>
+								<li>Muthu Ramaswamy</li>
+								<li>William Tan</li>
+							</ul>
+						</members>
+						<tech>
+							<badge>Arduino</badge>
+						</tech>
+						<links> 🔗 <a href="http://asd.courses.sutd.edu.sg/dti-teams/cohort-3-group-9/" target="_blank">Website</a> </links>
+					</left>
+					<right>
+						<p> A functional, life-sized prototype for an interactively light-able bridge archway. Our goal was to design an interactive and sustainable lighting solution for the Changi Business Park Garden, in order to make it feel more welcoming, comfortable, and engaging. The LED strips on each arch emit warm ambient light by default, and users may physically interact with the windchimes hanging from each arch to trigger a unique "ripple" lighting effect.</p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/Posties-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h1>Posties</h1>
+						<roles>Developer, 2022</roles>
+						<members></members>
+						<tech>
+							<badge>HTML</badge>
+							<badge>CSS</badge>
+							<badge>JavaScript</badge>
+							<badge>Tiled</badge>
+						</tech>
+						<links> 🔗 <a href="https://glimeure.github.io/Posties/" target="_blank">Demo</a> </links>
+					</left>
+					<right>
+						<p> An objective-less sandbox environment made to demonstrate how one might encode movement and collision for a playable character in a 2D space, in JavaScript. </p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/Rhytra-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h1>Rhytra</h1>
+						<roles>Developer, 2022</roles>
+						<members></members>
+						<tech>
+							<badge>HTML</badge>
+							<badge>CSS</badge>
+							<badge>JavaScript</badge>
+							<badge>Paint.NET</badge>
+						</tech>
+						<links> 🔗 <a href="https://glimeure.github.io/Rhytra/" target="_blank">Game</a> </links>
+					</left>
+					<right>
+						<p> A falling-note rhythm game. Inspired by Piano Tiles and osu!mania, this web-based rhythm game challenges players to press keyboard keys in sync with the descent of corresponding note blocks along the designated line. </p>
+					</right>
+				</subsection>
+			</section>
+
+			<section>
+				<swiper-container autoplay="true" effect="fade" crossFade="true">
+					<swiper-slide><img src="img/MinuteTab-1.png" /></swiper-slide>
+				</swiper-container>
+				<subsection>
+					<left>
+						<h1>MinuteTab</h1>
+						<roles>Developer, 2021</roles>
+						<members></members>
+						<tech>
+							<badge>HTML</badge>
+							<badge>CSS</badge>
+							<badge>JavaScript</badge>
+							<badge>Paint.NET</badge>
+						</tech>
+						<links> 🔗 <a href="https://glimeure.github.io/MinuteTab/" target="_blank">Page</a> </links>
+					</left>
+					<right>
+						<p> A modern, distraction-free new tab page. With high-quality background images selected at random upon every page refresh, this page focuses solely on cleanly and elegantly displaying the user's local time. </p>
+					</right>
+				</subsection>
+			</section>
+
+			<footer> © 2024 Gregory Lim. </footer>
 		</wrapper>
-		<!--
-			https://gregorylimeurhen.pyscriptapps.com/emmyai/latest/
 
-			https://glimeure.github.io/Rhytra/
-
-			https://glimeure.github.io/Posties/
-
-			https://glimeure.github.io/MinuteTab/
-		-->
+		<script src="index.js"></script>
 	</body>
 </html>
