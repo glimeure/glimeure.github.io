@@ -4,7 +4,7 @@ function checkViewportWidth() {
 	var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 	var wrappers = document.querySelectorAll("wrapper");
 	var viewportAlerts = document.querySelectorAll("viewport-alert");
-	if (viewportWidth < 425) {
+	if (viewportWidth < 280) {
 		wrappers.forEach((wrapper) => {
 			wrapper.style.display = "none";
 		});
